@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D7FA5EEF836CA3AC38CEA39 /* Pods_Flixxer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2727FFAC08AE1D6496374 /* Pods_Flixxer.framework */; };
+		6B42D2C9262A0F9E00D066E8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6B42D2C8262A0F9E00D066E8 /* AlamofireImage */; };
+		6B776473262A13AC000F9D6F /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B776472262A13AC000F9D6F /* MovieDetailsViewController.swift */; };
+		6B776478262A2530000F9D6F /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B776477262A2530000F9D6F /* MovieGridViewController.swift */; };
+		6B77647D262A28DC000F9D6F /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77647C262A28DC000F9D6F /* MovieGridCell.swift */; };
 		6BD698E426213E5D000BBDC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD698E326213E5D000BBDC9 /* AppDelegate.swift */; };
 		6BD698E626213E5D000BBDC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD698E526213E5D000BBDC9 /* SceneDelegate.swift */; };
 		6BD698EB26213E5D000BBDC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD698E926213E5D000BBDC9 /* Main.storyboard */; };
@@ -39,9 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032C77EE49FC7EC1F6BFC1DF /* Pods-FlixxerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixxerTests.release.xcconfig"; path = "Target Support Files/Pods-FlixxerTests/Pods-FlixxerTests.release.xcconfig"; sourceTree = "<group>"; };
 		07531B82B7A1BDD86413A3E5 /* Pods_FlixxerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixxerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B7C2DD02BAAB04A4D525E29 /* Pods-FlixxerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixxerTests.release.xcconfig"; path = "Target Support Files/Pods-FlixxerTests/Pods-FlixxerTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B4710439A240043589FD510 /* Pods-Flixxer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer.release.xcconfig"; path = "Target Support Files/Pods-Flixxer/Pods-Flixxer.release.xcconfig"; sourceTree = "<group>"; };
+		3727FFED76B2C9F28D979548 /* Pods-Flixxer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer.debug.xcconfig"; path = "Target Support Files/Pods-Flixxer/Pods-Flixxer.debug.xcconfig"; sourceTree = "<group>"; };
 		3FB2727FFAC08AE1D6496374 /* Pods_Flixxer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixxer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50898D4A3D677C8D3EE6FF6A /* Pods-Flixxer-FlixxerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer-FlixxerUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixxer-FlixxerUITests/Pods-Flixxer-FlixxerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6B776472262A13AC000F9D6F /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		6B776477262A2530000F9D6F /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		6B77647C262A28DC000F9D6F /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		6BD698E026213E5D000BBDC9 /* Flixxer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixxer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD698E326213E5D000BBDC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BD698E526213E5D000BBDC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +67,9 @@
 		6BD6990726213E5D000BBDC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BD6991926213FD9000BBDC9 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		6BD6991E26214593000BBDC9 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		784D16B8C48079CC0E3794A6 /* Pods-FlixxerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixxerTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixxerTests/Pods-FlixxerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		903E54B9C7BE16BB149E0FCB /* Pods_Flixxer_FlixxerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixxer_FlixxerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A76BBA94FD3863DF2966F231 /* Pods-Flixxer-FlixxerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer-FlixxerUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixxer-FlixxerUITests/Pods-Flixxer-FlixxerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AD422DCC3DFB9F62276F944C /* Pods-FlixxerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixxerTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixxerTests/Pods-FlixxerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ADC141006627545B0CCB6436 /* Pods-Flixxer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer.release.xcconfig"; path = "Target Support Files/Pods-Flixxer/Pods-Flixxer.release.xcconfig"; sourceTree = "<group>"; };
-		C4B5CB545F0A4447F818A1E1 /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer-FlixxerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixxer-FlixxerUITests/Pods-Flixxer-FlixxerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CE11087DFF3F1FF6886C83FB /* Pods-Flixxer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer.debug.xcconfig"; path = "Target Support Files/Pods-Flixxer/Pods-Flixxer.debug.xcconfig"; sourceTree = "<group>"; };
+		BF6E8EEB9B9514B916B7506F /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixxer-FlixxerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixxer-FlixxerUITests/Pods-Flixxer-FlixxerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7FA5EEF836CA3AC38CEA39 /* Pods_Flixxer.framework in Frameworks */,
+				6B42D2C9262A0F9E00D066E8 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +101,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B04639F1EB8E8AE36099E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3727FFED76B2C9F28D979548 /* Pods-Flixxer.debug.xcconfig */,
+				0B4710439A240043589FD510 /* Pods-Flixxer.release.xcconfig */,
+				BF6E8EEB9B9514B916B7506F /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */,
+				50898D4A3D677C8D3EE6FF6A /* Pods-Flixxer-FlixxerUITests.release.xcconfig */,
+				784D16B8C48079CC0E3794A6 /* Pods-FlixxerTests.debug.xcconfig */,
+				032C77EE49FC7EC1F6BFC1DF /* Pods-FlixxerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6B2F70904576A08BFDD3D358 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +131,8 @@
 				6BD698F926213E5D000BBDC9 /* FlixxerTests */,
 				6BD6990426213E5D000BBDC9 /* FlixxerUITests */,
 				6BD698E126213E5D000BBDC9 /* Products */,
-				91AC93ED81274E6F2DCCD7C9 /* Pods */,
 				6B2F70904576A08BFDD3D358 /* Frameworks */,
+				05B04639F1EB8E8AE36099E0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +157,9 @@
 				6BD698F126213E5D000BBDC9 /* Info.plist */,
 				6BD6991926213FD9000BBDC9 /* MoviesViewController.swift */,
 				6BD6991E26214593000BBDC9 /* MovieCell.swift */,
+				6B776472262A13AC000F9D6F /* MovieDetailsViewController.swift */,
+				6B776477262A2530000F9D6F /* MovieGridViewController.swift */,
+				6B77647C262A28DC000F9D6F /* MovieGridCell.swift */,
 			);
 			path = Flixxer;
 			sourceTree = "<group>";
@@ -158,20 +182,6 @@
 			path = FlixxerUITests;
 			sourceTree = "<group>";
 		};
-		91AC93ED81274E6F2DCCD7C9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CE11087DFF3F1FF6886C83FB /* Pods-Flixxer.debug.xcconfig */,
-				ADC141006627545B0CCB6436 /* Pods-Flixxer.release.xcconfig */,
-				C4B5CB545F0A4447F818A1E1 /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */,
-				A76BBA94FD3863DF2966F231 /* Pods-Flixxer-FlixxerUITests.release.xcconfig */,
-				AD422DCC3DFB9F62276F944C /* Pods-FlixxerTests.debug.xcconfig */,
-				3B7C2DD02BAAB04A4D525E29 /* Pods-FlixxerTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +200,9 @@
 			dependencies = (
 			);
 			name = Flixxer;
+			packageProductDependencies = (
+				6B42D2C8262A0F9E00D066E8 /* AlamofireImage */,
+			);
 			productName = Flixxer;
 			productReference = 6BD698E026213E5D000BBDC9 /* Flixxer.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +277,9 @@
 				Base,
 			);
 			mainGroup = 6BD698D726213E5D000BBDC9;
+			packageReferences = (
+				6B42D2C7262A0F9E00D066E8 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 6BD698E126213E5D000BBDC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -410,10 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B776473262A13AC000F9D6F /* MovieDetailsViewController.swift in Sources */,
 				6BD698E426213E5D000BBDC9 /* AppDelegate.swift in Sources */,
 				6BD698E626213E5D000BBDC9 /* SceneDelegate.swift in Sources */,
 				6BD6991F26214593000BBDC9 /* MovieCell.swift in Sources */,
 				6BD6991A26213FD9000BBDC9 /* MoviesViewController.swift in Sources */,
+				6B776478262A2530000F9D6F /* MovieGridViewController.swift in Sources */,
+				6B77647D262A28DC000F9D6F /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +605,7 @@
 		};
 		6BD6990B26213E5D000BBDC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE11087DFF3F1FF6886C83FB /* Pods-Flixxer.debug.xcconfig */;
+			baseConfigurationReference = 3727FFED76B2C9F28D979548 /* Pods-Flixxer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -605,7 +624,7 @@
 		};
 		6BD6990C26213E5D000BBDC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADC141006627545B0CCB6436 /* Pods-Flixxer.release.xcconfig */;
+			baseConfigurationReference = 0B4710439A240043589FD510 /* Pods-Flixxer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -624,7 +643,7 @@
 		};
 		6BD6990E26213E5D000BBDC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD422DCC3DFB9F62276F944C /* Pods-FlixxerTests.debug.xcconfig */;
+			baseConfigurationReference = 784D16B8C48079CC0E3794A6 /* Pods-FlixxerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,7 +665,7 @@
 		};
 		6BD6990F26213E5D000BBDC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7C2DD02BAAB04A4D525E29 /* Pods-FlixxerTests.release.xcconfig */;
+			baseConfigurationReference = 032C77EE49FC7EC1F6BFC1DF /* Pods-FlixxerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -668,7 +687,7 @@
 		};
 		6BD6991126213E5D000BBDC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4B5CB545F0A4447F818A1E1 /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */;
+			baseConfigurationReference = BF6E8EEB9B9514B916B7506F /* Pods-Flixxer-FlixxerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -688,7 +707,7 @@
 		};
 		6BD6991226213E5D000BBDC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A76BBA94FD3863DF2966F231 /* Pods-Flixxer-FlixxerUITests.release.xcconfig */;
+			baseConfigurationReference = 50898D4A3D677C8D3EE6FF6A /* Pods-Flixxer-FlixxerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -746,6 +765,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B42D2C7262A0F9E00D066E8 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B42D2C8262A0F9E00D066E8 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B42D2C7262A0F9E00D066E8 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6BD698D826213E5D000BBDC9 /* Project object */;
 }
