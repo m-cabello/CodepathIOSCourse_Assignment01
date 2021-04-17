@@ -1,3 +1,4 @@
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59664875/115101108-6e069280-9ef6-11eb-946c-27c4c9370ee1.gif)
 # CodepathIOSCourse_Assignment01
 # Flix
 
@@ -18,6 +19,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### App Walkthrough GIF
 
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/59664875/115101125-8c6c8e00-9ef6-11eb-9686-c7d8bd763a03.gif)
 
 ### Notes
 Describe any challenges encountered while building the app.
